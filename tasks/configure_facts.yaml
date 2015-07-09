@@ -1,0 +1,9 @@
+---
+  - name: Ensure Facter packages are up-to-date
+    yum: name=facter,libselinux-python state=latest
+  - name: Create custom facts folders
+    file: dest=/etc/facter/facts.d state=directory
+          owner=root group=root mode=0755
+  - name: Populate puppet facts
+    template: dest=/etc/facter/facts.d/static.yaml src=static_facts.yaml.j2
+              owner=root group=root mode=0600

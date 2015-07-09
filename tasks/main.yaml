@@ -1,0 +1,4 @@
+---
+  - include: configure_facts.yaml
+    when: apply == true
+  - debug: msg='{{ node_role }} | {{ configuration_group }} | {{ impact_level }} | {{ security_zone }} | {{ puppet_environment }}'

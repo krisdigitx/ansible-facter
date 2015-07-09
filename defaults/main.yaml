@@ -1,0 +1,7 @@
+---
+role: undef
+configuration_group: undef
+security_zone: undef
+impact_level: undef
+puppet_environment: undef
+apply: true
