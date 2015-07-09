@@ -1,1 +1,2 @@
-# ansible-facter
+###Ansible Facter roles
+This role sets custom facters for bootstrapping machines, these facters can then be used by puppet for deployment based on node role,group etc...
